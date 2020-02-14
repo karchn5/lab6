@@ -19,5 +19,16 @@ function statusChangeCallback(response) {
 }
 
 function changeUser(response) {
-    //Add code to change name and image 
-  }
+  console.log(response);
+  $("#facebookbutton").click(changeStuff);
+
+}
+
+
+function changeStuff(event){
+  $("#facebookbutton").fadeOut();
+  $(".facebookLogin").fadeOut();
+  $("#name").text("Kara Chen");
+  document.getElementById("photo").src = "images/beabadoobee.jpg";
+  // $("#photo").changeImage("images/lorempixel.people.1");
+}
